@@ -14,7 +14,7 @@ Errorjs will post any javascript errors that occur as json with the following st
 
 # Install
 
-open errorjs and change on the last line where it says: `})(window, /* Url to post logs to */ '/log/error')`, to be the correct url for your backend to log the errors. Then add errorjs script tag to your page as one of the first scripts to be run in order to capture any errors that occur when loading.
+open errorjs and change on the last line where it says: `/* Url to post logs to */ '/log/error')`, to be the correct url for your backend to log the errors. Then add errorjs script tag to your page as one of the first scripts to be run in order to capture any errors that occur when loading.
 
 # Licence
 
