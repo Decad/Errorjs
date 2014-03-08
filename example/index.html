@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ErrorJs Example</title>
+</head>
+<body>
+    <script src="../error.js"></script>
+    <script>
+        function a(){
+            b()
+        }
+
+        function b(){
+            c()
+        }
+
+        function c(){
+            Date.wrongFunction();
+        }
+
+        a();
+    </script>
+</body>
+</html>
