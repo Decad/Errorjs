@@ -6,7 +6,7 @@
 // Author: Declan Cook
 // Licence: MIT
 //
-(function(w, o){
+(function(w, url){
     //save the previously bound handler.
     var _onerror = w.onerror;
 
@@ -28,7 +28,7 @@
         }
 
         //Fire and forget
-        xhr.open('POST', o.url);
+        xhr.open('POST', url);
         xhr.setRequestHeader('Content-Type', 'application/json');
         xhr.send(JSON.stringify(err));
 
